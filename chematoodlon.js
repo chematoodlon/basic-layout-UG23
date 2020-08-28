@@ -1,3 +1,10 @@
+window.onload = function(){
+	
+	var lt = new Date().getTime() -window.performance.timing.navigationStart;
+	console.log(lt);
+}
+
+
 //Showing and hiding the top menu on clicking the menu button & clicking outside respectively:	
 
 	var mb = document.getElementById("menuButtonM");
@@ -8,8 +15,8 @@
 			
 			window.addEventListener('click',function(e){
 					
-			if(mb.contains(e.target)){n=1}
-			else{n=0}
+			if(mb.contains(e.target)){n=1;}
+			else{n=0;}
 			
 			if(mc.contains(e.target)){
 			mb.style="initial";
